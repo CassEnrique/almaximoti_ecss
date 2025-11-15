@@ -37,7 +37,11 @@ export async function createRecord(
   return await res.json();
 }
 
-export async function putRecord(module: string, pk string | number, payload: any): Promise<any> {
+export async function putRecord(
+  module: string,
+  pk: string | number,
+  payload: any,
+): Promise<any> {
   const res: Response = await fetch(`${service}${version}/${module}/${pk}/`, {
     method: "PUT",
     ...REQUEST_HEADERS,

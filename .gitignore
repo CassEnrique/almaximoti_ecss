@@ -214,6 +214,8 @@ fnd/next-env.d.ts
 # End of https://www.toptal.com/developers/gitignore/api/django,nextjs
 
 # DEV
+__pycache__
+__init__.py
 practica_python
 .env.production
 layout.sh
